@@ -9,6 +9,8 @@ df = pd.read_excel("C://xl//file.xlsx", index_col=None, na_values=['NA'], usecol
 
 thislist = []
 
+
+
 #Reading an Excel FIle
 for index, row in df.iterrows():   # index =0, 1, 2,.....
     firtname =  row[0]#reading column1 Data
@@ -18,6 +20,10 @@ for index, row in df.iterrows():   # index =0, 1, 2,.....
     address = row[4]#if you read 3 columnd remove this line    
     data1 = TestData(row[0],row[1],row[2],row[3],row[4])
     thislist.append(data1)
+
+
+
+
  
 for obj in thislist:    
     print(obj.firtname)
