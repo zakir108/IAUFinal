@@ -1,4 +1,6 @@
+
 s1 = 'CAc'
+
 s2 = 'ababa'
 
 length = len(s1)

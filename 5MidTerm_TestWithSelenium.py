@@ -25,7 +25,7 @@ email = driver.find_element(By.ID,"email")
 email.send_keys('Email@yahoo.com')
     #phone
 phone = driver.find_element(By.ID,"telephoneno")
-phone.send_keys('Phone')
+phone.send_keys('123456')
     #address
 address = driver.find_element(By.NAME,"addr")
 address.send_keys('Address')

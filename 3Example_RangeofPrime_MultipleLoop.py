@@ -1,3 +1,5 @@
+#aVOID
+
 candidateNumSt = 5
 candidateNumEnd = 100
 

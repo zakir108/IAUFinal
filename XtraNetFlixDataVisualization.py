@@ -21,7 +21,7 @@ df_cleaned = CleanedData(df)
 #print('Data CLeaned')
 
 
-PlotDistribution(df_cleaned,plt,sns)
+#PlotDistribution(df_cleaned,plt,sns)
 #print('Protting Distribution')
 
 

@@ -46,17 +46,24 @@ options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(options=options)
 
 for item in thislist:
+    #SET URL FOR YOUR SELECTED WEB APPLICATAION
     driver.get("https://demo.guru99.com/telecom/addcustomer.php")
     time.sleep(3)   
     #Check the done radio Button
+
+    #Check Element X PATH by Right Click > Inspect ELement
     element2 = driver.find_element(By.XPATH,"//*[@id='main']/div/form/div/div[1]/label")
     element2.click()
+
+
     #first name
     fname = driver.find_element(By.ID,"fname")
     fname.send_keys(item.fname)
+
     #last name
     lname = driver.find_element(By.ID,"lname")
     lname.send_keys(item.lname)
+    
     #email
     time.sleep(2) 
     email = driver.find_element(By.ID,"email")

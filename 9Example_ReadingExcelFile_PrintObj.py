@@ -21,9 +21,6 @@ for index, row in df.iterrows():   # index =0, 1, 2,.....
     data1 = TestData(row[0],row[1],row[2],row[3],row[4])
     thislist.append(data1)
 
-
-
-
  
 for obj in thislist:    
     print(obj.firtname)

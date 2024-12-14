@@ -9,7 +9,7 @@ while piramidStart <=piramidend: #1,2,3,4,5
     
     space= spaceCount          
     while space>=1:
-        print('-',end='')
+        print(' ',end='')
         space=space-1    
     
     starBegin = 1

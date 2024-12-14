@@ -2,11 +2,8 @@
 import pandas as pd
 from ExampleClasData import TestData
 
-
 #dataframe
 df = pd.read_excel("C://xl//file.xlsx", index_col=None, na_values=['NA'], usecols="B,C,D,E,F")
-
-
 thislist = []
 
 #Reading an Excel FIle
@@ -17,6 +14,7 @@ for index, row in df.iterrows():   # index =0, 1, 2,.....
     phone = row[3]     #if you read 3 columnd remove this line
     address = row[4]   #if you read 3 columnd remove this line    
     data1 = TestData(row[0],row[1],row[2],row[3],row[4])
-    thislist.append(data1)
+    print(firtname,lastname,email,address)
+    #thislist.append(data1)
  
-print(thislist)
+#print(thislist)
